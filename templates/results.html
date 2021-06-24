@@ -1,0 +1,13 @@
+<!DOCTYPE=html>
+<html>
+<head>
+    <title>
+        Results
+    </title>
+</head>
+<body>
+    {% for hist in hists %}
+    <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}">
+    {% endfor %}
+</body>
+</html>
